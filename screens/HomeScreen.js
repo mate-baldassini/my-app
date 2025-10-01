@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { View, Text, FlatList, TouchableOpacity, Image, Button } from "react-native";
-import { CartContext } from "/context/CartContext";
-import { globalStyles } from "/style";
+import { CartContext } from "../context/CartContext";
+import { globalStyles } from "../style";
 
 const products = [
   { id: 1, name: "PS5", category: "Consola", price: 500, image: require("/assets/play5.png") },

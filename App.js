@@ -3,9 +3,9 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { CartProvider } from "/context/CartContext";
 
-import LoginScreen from "/screens/";
-import HomeScreen from "/screens/HomeScreen";
-import CartScreen from "/screens/CartScreen";
+import LoginScreen from "./screens/loginscreen";
+import HomeScreen from "./screens/HomeScreen";
+import CartScreen from "./screens/cartscreen";
 
 const Stack = createNativeStackNavigator();
 
