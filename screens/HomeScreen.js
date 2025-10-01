@@ -1,19 +1,19 @@
 import React, { useState, useContext } from "react";
 import { View, Text, FlatList, TouchableOpacity, Image, Button } from "react-native";
-import { CartContext } from "../context/CartContext";
-import { globalStyles } from "../styles";
+import { CartContext } from "/context/CartContext";
+import { globalStyles } from "/style";
 
 const products = [
-  { id: 1, name: "PS5", category: "Consola", price: 500, image: require("../assets/ps5.png") },
-  { id: 2, name: "Xbox Series X", category: "Consola", price: 480, image: require("../assets/xbox.png") },
-  { id: 3, name: "Nintendo Switch", category: "Consola", price: 300, image: require("../assets/switch.png") },
-  { id: 4, name: "Steam Deck", category: "Consola", price: 350, image: require("../assets/steam.png") },
-  { id: 5, name: "PS4", category: "Consola", price: 250, image: require("../assets/ps4.png") },
-  { id: 6, name: "Joystick PS5", category: "Accesorio", price: 70, image: require("../assets/joystick.png") },
-  { id: 7, name: "Auriculares Gamer", category: "Accesorio", price: 50, image: require("../assets/headset.png") },
-  { id: 8, name: "Mouse Gamer", category: "Accesorio", price: 40, image: require("../assets/mouse.png") },
-  { id: 9, name: "Teclado Mecánico", category: "Accesorio", price: 60, image: require("../assets/keyboard.png") },
-  { id: 10, name: "Cámara PS5", category: "Accesorio", price: 100, image: require("../assets/camera.png") },
+  { id: 1, name: "PS5", category: "Consola", price: 500, image: require("/assets/play5.png") },
+  { id: 2, name: "Xbox Series X", category: "Consola", price: 480, image: require("/assets/xboxseriex.png") },
+  { id: 3, name: "Nintendo Switch", category: "Consola", price: 300, image: require("/assets/switch.png") },
+  { id: 4, name: "Steam Deck", category: "Consola", price: 350, image: require("/assets/steamdeack.png") },
+  { id: 5, name: "PS4", category: "Consola", price: 250, image: require("/assets/play4.png") },
+  { id: 6, name: "Joystick PS5", category: "Accesorio", price: 70, image: require("/assets/joystick.png") },
+  { id: 7, name: "Auriculares Gamer", category: "Accesorio", price: 50, image: require("/assets/headset.png") },
+  { id: 8, name: "Mouse Gamer", category: "Accesorio", price: 40, image: require("/assets/mouse.png") },
+  { id: 9, name: "Teclado Mecánico", category: "Accesorio", price: 60, image: require("/assets/keyboard.png") },
+  { id: 10, name: "Cámara PS5", category: "Accesorio", price: 100, image: require("/assets/camera.png") },
 ];
 
 export default function HomeScreen() {
