@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, TouchableOpacity } from "react-native";
-import { globalStyles } from "/style";
+import { View, Text, TextInput, TouchableOpacity,alert } from "react-native";
+import { globalStyles } from "../style";
 
 export default function LoginScreen({ navigation }) {
   const [user, setUser] = useState("");
@@ -10,7 +10,7 @@ export default function LoginScreen({ navigation }) {
     if (user === "admin" && pass === "1234") {
       navigation.replace("Home");
     } else {
-      alert("Usuario o contraseña incorrectos");
+      alert.alert("error", "Usuario o contraseña incorrectos");
     }
   };
 

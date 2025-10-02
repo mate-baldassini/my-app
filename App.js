@@ -1,7 +1,7 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { CartProvider } from "/context/CartContext";
+import { CartProvider } from "./context/CartContext";
 
 import LoginScreen from "./screens/loginscreen";
 import HomeScreen from "./screens/HomeScreen";
@@ -9,7 +9,7 @@ import CartScreen from "./screens/cartscreen";
 
 const Stack = createNativeStackNavigator();
 
-export default function App() {
+export default function app() {
   return (
     <CartProvider>
       <NavigationContainer>

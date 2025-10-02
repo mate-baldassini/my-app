@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { View, Text, FlatList, TouchableOpacity } from "react-native";
 import { CartContext } from "/context/CartContext";
-import { globalStyles } from "../screens";
+import { globalStyles } from "../style";
 
 export default function CartScreen() {
   const { cart, removeFromCart, clearCart } = useContext(CartContext);
@@ -14,7 +14,7 @@ export default function CartScreen() {
 
       <FlatList
         data={cart}
-        keyExtractor={(item, index) => index.toString()}
+        keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
           <View style={globalStyles.cartItem}>
             <Text>{item.name} - ${item.price}</Text>
