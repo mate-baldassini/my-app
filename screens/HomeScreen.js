@@ -7,7 +7,7 @@ import ps5Image from '../assets/play5.png';
 import xboxImage from '../assets/xboxseriex.png';
 import switchImage from '../assets/switch.png';
 import steamDeckImage from '../assets/steamdeack.png';
-import ps4Image from '../assets/ps4Image';
+import ps4Image from '../assets/play4.png';
 import joystickImage from '../assets/joystick.png';
 import headsetImage from '../assets/headset.png';
 import mouseImage from '../assets/mouse.png';
