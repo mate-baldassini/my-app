@@ -3,16 +3,16 @@ import { View, Text, FlatList, TouchableOpacity, Image, Button } from "react-nat
 import { CartContext } from "../context/CartContext";
 import { globalStyles } from "../style";
 
-import ps5Image from '/assets/play5.png';
-import xboxImage from '/assets/xboxseriex.png';
-import switchImage from '/assets/switch.png';
-import steamDeckImage from '/assets/steamdeack.png';
-import ps4Image from '/assets/play4.png';
-import joystickImage from '/assets/joystick.png';
-import headsetImage from '/assets/headset.png';
-import mouseImage from '/assets/mouse.png';
-import keyboardImage from '/assets/keyboard.png';
-import cameraImage from '/assets/camera.png';
+import ps5Image from '../assets/play5.png';
+import xboxImage from '../assets/xboxseriex.png';
+import switchImage from '../assets/switch.png';
+import steamDeckImage from '../assets/steamdeack.png';
+import ps4Image from '../assets/ps4Image';
+import joystickImage from '../assets/joystick.png';
+import headsetImage from '../assets/headset.png';
+import mouseImage from '../assets/mouse.png';
+import keyboardImage from '../assets/keyboard.png';
+import cameraImage from '../assets/camera.png';
 
 const products = [
   { id: 1, name: "PS5", category: "Consola", price: 500, image: ps5Image },
