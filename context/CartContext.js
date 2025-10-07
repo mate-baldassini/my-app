@@ -1,5 +1,4 @@
- import React, { createContext, useState, useEffect } from "react";
- import * as SQLite from "expo-sqlite";
+import { SQLiteProvider, useSQLiteContext } from "expo-sqlite";
 
 export const CartContext = createContext();
 
